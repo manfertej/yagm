@@ -3,7 +3,10 @@ package dev.manfertej.yagm;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
+	//Uncomment when you don't want to connect to DB
+	//(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 public class YagmApplication {
 
 	public static void main(String[] args) {
