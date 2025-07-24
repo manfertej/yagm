@@ -1,12 +1,14 @@
 package dev.manfertej.yagm.common.exception;
 
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
-public class ResourceNotFoundException extends RuntimeException {
 
-	private final HttpStatus httpStatus = HttpStatus.NOT_FOUND;
+@Getter
+public class ResourceNotFoundException extends APIException {
 
 	public ResourceNotFoundException(String message) {
 		super(message);
+		this.setHttpStatus(HttpStatus.NOT_FOUND);
 	}
 }

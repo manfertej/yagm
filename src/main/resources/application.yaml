@@ -7,7 +7,7 @@ spring:
         password: '${DB_PASSWORD}'
     jpa:
         hibernate:
-            ddl-auto: create-drop
+            ddl-auto: auto
         defer-datasource-initialization: true
     sql:
         init:
@@ -18,3 +18,4 @@ messages:
     clientDoesNotExist: "Client exception - Client does not exists"
     clientRegistered: "Client registered successfully"
     clientDeleted: "Client deleted successfully"
+    invalidClientData: "Invalid client data"
