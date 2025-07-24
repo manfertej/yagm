@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Long> {
 
-	public boolean existsByDni(String dni);
+	boolean existsByDni(String dni);
 
 }

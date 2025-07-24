@@ -4,15 +4,12 @@ import dev.manfertej.yagm.common.exception.ResourceConflictException;
 import dev.manfertej.yagm.common.exception.ResourceNotFoundException;
 import dev.manfertej.yagm.common.properties.ApplicationMessages;
 import dev.manfertej.yagm.model.dto.ClientDTO;
-import dev.manfertej.yagm.model.entity.Client;
 import dev.manfertej.yagm.model.mapper.ClientMapper;
 import dev.manfertej.yagm.service.ClientService;
-import jakarta.validation.UnexpectedTypeException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
