@@ -23,9 +23,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-// Specific test class annotation for controllers
+
 @WebMvcTest(controllers = ClientController.class)
-// Bypass Spring Security
 @AutoConfigureMockMvc
 @DisplayName("Client Controller tests")
 public class ClientControllerTest {

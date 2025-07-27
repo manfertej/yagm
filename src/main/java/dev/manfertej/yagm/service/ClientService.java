@@ -24,12 +24,12 @@ public class ClientService {
 	}
 
 
-	public void register(Client client) throws ResourceConflictException {
+	public Client register(Client client) throws ResourceConflictException {
 
 		if(clientRepository.existsByDni(client.getDni()))
 			throw new ResourceConflictException(applicationMessages.getClientAlreadyExists());
 
-		clientRepository.save(client);
+		return clientRepository.save(client);
 	}
 
 }
