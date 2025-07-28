@@ -2,6 +2,9 @@ package dev.manfertej.yagm.model.entity;
 
 import lombok.Getter;
 
+import java.util.Arrays;
+import java.util.Optional;
+
 @Getter
 public enum Muscle {
 
@@ -21,6 +24,12 @@ public enum Muscle {
 
 	Muscle(String label) {
 		this.label = label;
+	}
+
+	public static Optional<Muscle> fromLabel(String label) {
+		return Arrays.stream(values())
+			.filter(m -> m.getLabel().equalsIgnoreCase(label))
+			.findFirst();
 	}
 
 }
