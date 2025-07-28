@@ -3,7 +3,7 @@ package dev.manfertej.yagm.model.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Exercises")
+@Table(name = "\"EXERCISES\"")
 public class Exercise {
 
 	@Id

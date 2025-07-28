@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS public.clients
+CREATE TABLE IF NOT EXISTS public."CLIENTS"
 (
     phone_number integer NOT NULL,
     zip integer NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS public.clients
 );
 
 
-CREATE TABLE IF NOT EXISTS public.exercises
+CREATE TABLE IF NOT EXISTS public."EXERCISES"
 (
     recommended_max_reps integer NOT NULL,
     recommended_min_reps integer NOT NULL,

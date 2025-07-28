@@ -1,4 +1,4 @@
-INSERT INTO public.clients
+INSERT INTO public."CLIENTS"
 (phone_number, zip, address, city, country, dni, email, first_name, last_name)
 VALUES
 (123456789, 28001, 'Calle Mayor 1', 'Madrid', 'España', 'DNI0001', 'ana.lopez@example.com', 'Ana', 'López'),
@@ -12,7 +12,7 @@ VALUES
 (901234567, 07001, 'Carrer de Sant Miquel 7', 'Palma', 'España', 'DNI0009', 'sara.ramos@example.com', 'Sara', 'Ramos'),
 (912345678, 35001, 'Avenida Marítima 22', 'Las Palmas', 'España', 'DNI0010', 'diego.ruiz@example.com', 'Diego', 'Ruiz');
 
-INSERT INTO public.exercises
+INSERT INTO public."EXERCISES"
 (recommended_min_reps, recommended_max_reps, recommended_sets, muscle, name, tool)
 VALUES
 (8, 12, 3, 'BICEPS', 'Curl con barra', 'Barra'),
