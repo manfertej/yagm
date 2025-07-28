@@ -1,5 +1,8 @@
 package dev.manfertej.yagm.model.entity;
 
+import lombok.Getter;
+
+@Getter
 public enum Muscle {
 
 	BICEPS("Biceps"),
@@ -20,5 +23,4 @@ public enum Muscle {
 		this.label = label;
 	}
 
-	public String getLabel() { return this.label; };
 }
