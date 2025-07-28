@@ -7,7 +7,7 @@ spring:
         password: '${DB_PASSWORD}'
     jpa:
         hibernate:
-            ddl-auto: auto
+            ddl-auto: create-drop
         defer-datasource-initialization: true
     sql:
         init:

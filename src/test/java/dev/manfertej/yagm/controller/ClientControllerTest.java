@@ -87,7 +87,7 @@ public class ClientControllerTest {
 			.dni("12345678L")
 			.build();
 
-		doNothing().when(clientService).register(ClientMapper.toEntity(client));
+		when(clientService.register(ClientMapper.toEntity(client))).thenReturn(null);
 
 		ObjectMapper objectMapper = new ObjectMapper();
 
