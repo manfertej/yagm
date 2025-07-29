@@ -13,15 +13,28 @@ VALUES
 (912345678, 35001, 'Avenida Marítima 22', 'Las Palmas', 'España', 'DNI0010', 'diego.ruiz@example.com', 'Diego', 'Ruiz');
 
 INSERT INTO public."EXERCISES"
-(recommended_min_reps, recommended_max_reps, recommended_sets, muscle, name, tool)
+(recommended_min_reps, recommended_max_reps, recommended_sets, muscle, name, equipment)
 VALUES
-(8, 12, 3, 'BICEPS', 'Curl con barra', 'Barra'),
+(8, 12, 3, 'BICEPS', 'Curl de biceps', 'Barra'),
+(8, 12, 3, 'BICEPS', 'Curl de biceps', 'Máquina'),
+(8, 12, 3, 'BICEPS', 'Curl de biceps', 'Polea'),
 (10, 15, 4, 'TRICEPS', 'Fondos en paralelas', 'Peso corporal'),
+(10, 15, 4, 'TRICEPS', 'Press francés', 'Mancuernas'),
+(10, 15, 4, 'TRICEPS', 'Triceps en polea', 'Polea'),
 (8, 12, 3, 'SHOULDER', 'Press militar', 'Mancuernas'),
+(8, 12, 3, 'SHOULDER', 'Press militar', 'Máquina'),
+(8, 12, 3, 'SHOULDER', 'Press militar', 'Barra'),
+(8, 12, 3, 'SHOULDER', 'Elevaciones laterales', 'Mancuernas'),
+(8, 12, 3, 'SHOULDER', 'Elevaciones laterales', 'Polea'),
 (8, 12, 3, 'FOREARMS', 'Curl inverso con barra', 'Barra'),
 (8, 12, 4, 'CHEST', 'Press inclinado con mancuernas', 'Mancuernas'),
+(8, 12, 4, 'CHEST', 'Press de pecho', 'Mancuernas'),
+(8, 12, 4, 'CHEST', 'Press de pecho', 'Barra'),
+(8, 12, 4, 'CHEST', 'Press de pecho', 'Maquina'),
 (8, 12, 4, 'UPPER_BACK', 'Remo con barra T', 'Barra'),
+(8, 12, 4, 'UPPER_BACK', 'Jalón con agarre abierto', 'Polea'),
 (8, 12, 3, 'LATS', 'Jalón con agarre neutro', 'Polea'),
 (8, 12, 4, 'QUADS', 'Prensa de piernas', 'Máquina'),
+(8, 12, 4, 'QUADS', 'Sentadilla', 'Barra'),
 (8, 12, 3, 'FEMORAL', 'Peso muerto rumano', 'Barra'),
 (8, 12, 3, 'CALVES', 'Elevación de talones sentado', 'Máquina');

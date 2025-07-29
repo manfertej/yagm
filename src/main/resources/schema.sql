@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS public."EXERCISES"
     instructions character varying(255) COLLATE pg_catalog."default",
     muscle character varying(255) COLLATE pg_catalog."default" NOT NULL,
     name character varying(255) COLLATE pg_catalog."default" NOT NULL,
-    tool character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    equipment character varying(255) COLLATE pg_catalog."default" NOT NULL,
     url character varying(255) COLLATE pg_catalog."default",
     CONSTRAINT exercises_pkey PRIMARY KEY (id),
     CONSTRAINT exercises_muscle_check CHECK (muscle::text = ANY (ARRAY['BICEPS'::character varying, 'TRICEPS'::character varying, 'SHOULDER'::character varying, 'FOREARMS'::character varying, 'CHEST'::character varying, 'UPPER_BACK'::character varying, 'LATS'::character varying, 'QUADS'::character varying, 'FEMORAL'::character varying, 'CALVES'::character varying, 'ABS'::character varying]::text[]))

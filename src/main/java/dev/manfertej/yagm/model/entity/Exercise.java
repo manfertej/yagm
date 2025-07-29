@@ -11,7 +11,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "\"EXERCISES\"")
+@Table(
+	name = "\"EXERCISES\"",
+	// Pair (name, tool) should be unique
+	uniqueConstraints =
+		{@UniqueConstraint(columnNames = {"Name", "Equipment"})}
+)
 public class Exercise {
 
 	@Id
@@ -19,7 +24,7 @@ public class Exercise {
 	@Column(name = "Id", unique = true, nullable = false)
 	private Long ID;
 
-	@Column(name = "name", nullable = false)
+	@Column(name = "Name", nullable = false)
 	private String name;
 	@Column(name = "Recommended_Sets", nullable = false)
 	private int recommendedSets;
@@ -28,8 +33,8 @@ public class Exercise {
 	@Column(name = "Recommended_Max_Reps", nullable = false)
 	private int recommendedMaxReps;
 
-	@Column(name = "Tool", nullable = false)
-	private String tool;
+	@Column(name = "Equipment", nullable = false)
+	private String equipment;
 
 	@Enumerated(EnumType.STRING)
 	@Column(name = "Muscle", nullable = false)

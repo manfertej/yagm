@@ -11,9 +11,9 @@ public class ClientMapper {
 		return new ModelMapper().map(client, ClientDTO.class);
 	}
 
-	public static Client toEntity(ClientDTO client) {
+	public static Client toEntity(ClientDTO clientDTO) {
 
-		return new ModelMapper().map(client, Client.class);
+		return new ModelMapper().map(clientDTO, Client.class);
 	}
 
 
