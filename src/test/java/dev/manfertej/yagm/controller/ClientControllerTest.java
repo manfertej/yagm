@@ -2,7 +2,7 @@ package dev.manfertej.yagm.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.manfertej.yagm.common.exception.ResourceNotFoundException;
-import dev.manfertej.yagm.common.properties.ApplicationMessages;
+import dev.manfertej.yagm.common.properties.ClientMessages;
 import dev.manfertej.yagm.model.dto.ClientDTO;
 import dev.manfertej.yagm.model.entity.Client;
 import dev.manfertej.yagm.model.mapper.ClientMapper;
@@ -33,9 +33,6 @@ public class ClientControllerTest {
 
 	@MockitoBean
 	private ClientService clientService;
-
-	@MockitoBean
-	private ApplicationMessages applicationMessages;
 
 
 	@Test
@@ -68,7 +65,7 @@ public class ClientControllerTest {
 	void errorIfDoNotExists() throws Exception {
 
 		when(this.clientService.getByID(50L)).thenThrow(
-			new ResourceNotFoundException(new ApplicationMessages().getClientDoesNotExist()));
+			new ResourceNotFoundException(ClientMessages.DOES_NOT_EXISTS));
 
 		mockMvc.perform(get("/api/v1/clients/50"))
 			.andExpect(status().is4xxClientError());

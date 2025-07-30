@@ -2,7 +2,6 @@ package dev.manfertej.yagm.service;
 
 import dev.manfertej.yagm.common.exception.ResourceConflictException;
 import dev.manfertej.yagm.common.exception.ResourceNotFoundException;
-import dev.manfertej.yagm.common.properties.ApplicationMessages;
 import dev.manfertej.yagm.model.entity.Client;
 import dev.manfertej.yagm.repository.ClientRepository;
 import org.junit.jupiter.api.DisplayName;
@@ -24,9 +23,6 @@ public class ClientServiceTest {
 
 	@Mock
 	private ClientRepository clientRepository;
-
-	@Mock
-	private ApplicationMessages applicationMessages;
 
 	@InjectMocks
 	private ClientService clientService;

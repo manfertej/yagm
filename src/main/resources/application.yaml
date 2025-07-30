@@ -14,10 +14,3 @@ spring:
     sql:
         init:
             mode: always
-
-messages:
-    clientAlreadyExists: "Client exception - Client already exists"
-    clientDoesNotExist: "Client exception - Client does not exists"
-    clientRegistered: "Client registered successfully"
-    clientDeleted: "Client deleted successfully"
-    invalidClientData: "Invalid client data"

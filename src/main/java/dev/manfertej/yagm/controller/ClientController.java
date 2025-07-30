@@ -2,7 +2,7 @@ package dev.manfertej.yagm.controller;
 
 import dev.manfertej.yagm.common.exception.ResourceConflictException;
 import dev.manfertej.yagm.common.exception.ResourceNotFoundException;
-import dev.manfertej.yagm.common.properties.ApplicationMessages;
+import dev.manfertej.yagm.common.properties.ClientMessages;
 import dev.manfertej.yagm.model.dto.ClientDTO;
 import dev.manfertej.yagm.model.mapper.ClientMapper;
 import dev.manfertej.yagm.service.ClientService;
@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.*;
 public class ClientController {
 
 	private final ClientService clientService;
-	private final ApplicationMessages applicationMessages;
 
 
 	@GetMapping("/{id}")
@@ -36,7 +35,7 @@ public class ClientController {
 
 		clientService.register(ClientMapper.toEntity(client));
 
-		return ResponseEntity.ok(applicationMessages.getClientRegistered());
+		return ResponseEntity.ok(ClientMessages.REGISTERED);
 	}
 
 
@@ -59,7 +58,7 @@ public class ClientController {
 	public ResponseEntity<String> invalidClientData(MethodArgumentNotValidException ex) {
 		return ResponseEntity
 			.status(HttpStatus.CONFLICT)
-			.body(applicationMessages.getInvalidClientData());
+			.body(ClientMessages.INVALID_DATA);
 	}
 
 }
