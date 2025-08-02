@@ -1,4 +1,4 @@
-package dev.manfertej.yagm.common.properties;
+package dev.manfertej.yagm.common.messages;
 
 /* Keep this for using messages from app properties
 (I don't really like it that way. At least for this.)

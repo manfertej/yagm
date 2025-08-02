@@ -2,7 +2,7 @@ package dev.manfertej.yagm.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.manfertej.yagm.common.exception.ResourceNotFoundException;
-import dev.manfertej.yagm.common.properties.ClientMessages;
+import dev.manfertej.yagm.common.messages.ClientMessages;
 import dev.manfertej.yagm.model.dto.ClientDTO;
 import dev.manfertej.yagm.model.entity.Client;
 import dev.manfertej.yagm.model.mapper.ClientMapper;

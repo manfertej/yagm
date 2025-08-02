@@ -2,7 +2,7 @@ package dev.manfertej.yagm.controller;
 
 import dev.manfertej.yagm.common.exception.ResourceConflictException;
 import dev.manfertej.yagm.common.exception.ResourceNotFoundException;
-import dev.manfertej.yagm.common.properties.ClientMessages;
+import dev.manfertej.yagm.common.messages.ClientMessages;
 import dev.manfertej.yagm.model.dto.ClientDTO;
 import dev.manfertej.yagm.model.mapper.ClientMapper;
 import dev.manfertej.yagm.service.ClientService;
