@@ -15,16 +15,9 @@ public class ExerciseService {
 	private final ExerciseRepository exerciseRepository;
 
 
-	public List<Exercise> getByMuscle(Muscle muscle) {
-		var list = this.exerciseRepository.findByMuscle(muscle);
-
-		return list;
-	}
-
 	public List<Exercise> getByMuscles(List<Muscle> muscle) {
-		var list = this.exerciseRepository.findByMuscleIn(muscle);
 
-		return list;
+		return this.exerciseRepository.findByMuscleIn(muscle);
 	}
 
 }

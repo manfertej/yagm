@@ -8,6 +8,5 @@ import java.util.List;
 
 public interface ExerciseRepository extends JpaRepository<Exercise, Long> {
 
-	public List<Exercise> findByMuscle(Muscle muscle);
 	public List<Exercise> findByMuscleIn(List<Muscle> muscle);
 }
