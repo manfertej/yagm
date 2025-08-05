@@ -21,4 +21,10 @@ public class ExerciseService {
 		return list;
 	}
 
+	public List<Exercise> getByMuscles(List<Muscle> muscle) {
+		var list = this.exerciseRepository.findByMuscleIn(muscle);
+
+		return list;
+	}
+
 }
